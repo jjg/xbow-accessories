@@ -1,7 +1,8 @@
-shaft_diameter = 5;
-shaft_length = 110;
-fletching_length = 50;
-fletching_width = 15;
+shaft_diameter = 6.3;
+shaft_length = 150;
+fletching_length = 65;
+fletching_width = 16.68;
+fletching_depth = .75;
 point_length = 8;
 
 // shaft
@@ -16,8 +17,8 @@ translate([0,0,shaft_length]){
 translate([0,0,5]){
 	hull(){
 		cylinder(r=shaft_diameter/4, h=fletching_length, $fn=25);	
-		translate([-fletching_width/2,-(shaft_diameter/10)/2,fletching_length/6]){
-			cube([fletching_width,shaft_diameter/10, fletching_length/3]);
+		translate([-fletching_width/2,-(fletching_depth)/2,fletching_length/6]){
+			cube([fletching_width,fletching_depth, fletching_length/3]);
 		}
 	}
 }
