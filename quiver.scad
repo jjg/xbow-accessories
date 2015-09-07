@@ -25,7 +25,7 @@ union(){
 			for(yt = [0:bolt_capacity-1]){
 				translate([-1,((bolt_shaft_diameter*yt)*2) + bolt_shaft_diameter,bolt_shaft_diameter*1.7]){
 					rotate([0,90,0]){
-						#cylinder(r1=bolt_shaft_diameter/2,r2=.5,h=shaft_clip_width*2,$fn=25);
+						cylinder(r1=bolt_shaft_diameter/2,r2=.5,h=shaft_clip_width*2,$fn=25);
 					}
 				}
 			}
